@@ -1,19 +1,84 @@
 name: doker
-description: "A new Flutter project."
-publish_to: 'none'
-version: 0.1.0
+description: Help yo to make your 'Dompet' is not empty 'Kering'
+version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  # Flutter SDK dependencies
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
-dev_dependencies:
+  # State management
+  flutter_riverpod: ^2.0.0
+  hooks_riverpod: ^2.0.0
+  freezed_annotation: ^2.2.0
+
+  # Networking
+  dio: ^5.0.0
+  retrofit: ^4.0.0
+
+  # Local storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # UI Framework
+  flutter_hooks: ^0.18.0
+  flutter_svg: ^2.0.7
+  font_awesome_flutter: ^10.5.0
+  fl_chart: ^0.60.0
+  syncfusion_flutter_charts: ^20.4.0
+  responsive_framework: ^1.5.1 # Web responsiveness
+
+   # Firebase
+  firebase_core: ^2.10.0 # Core Firebase integration
+  cloud_firestore: ^4.10.0 # Firestore for real-time database
+  firebase_auth: ^4.6.1 # Authentication for user login/signup
+  firebase_storage: ^11.1.0 # Storage for file uploads
+  firebase_analytics: ^10.3.0 # Analytics for user tracking
+  firebase_crashlytics: ^3.3.0 # Crash reporting and monitorings
+
+  # Navigation
+  go_router: ^9.0.0
+  url_launcher: ^6.1.10
+
+  # Validation
+  formz: ^0.6.1
+
+  # Localization
+  intl: ^0.19.0
+
+  # Testing
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  integration_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  riverpod_test: ^0.1.6
+
+dev_dependencies:
+  # Code generation
+  build_runner: ^2.4.0
+  freezed: ^2.4.0
+  retrofit_generator: ^8.2.1
+  hive_generator: ^2.0.1
+  json_serializable: ^6.6.0
+
+  # Linting
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
